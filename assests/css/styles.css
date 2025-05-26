@@ -7,6 +7,11 @@
 }
 
 :root {
+    --heading-color: #080415;
+    --desc-color: #51586a;
+    --btn-bg: #5d3bee;
+    --btn-color: #fdfdfd;
+    --main-cl: #5d3bee;
 }
 
 html {
@@ -16,4 +21,28 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "DM Sans", sans-serif;
+}
+
+/* ============== Common ============== */
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn {
+    min-width: 170px;
+    height: 62px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.678;
+    background: var(--btn-bg);
+    color: var(--btn-color);
 }
