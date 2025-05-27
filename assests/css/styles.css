@@ -15,7 +15,7 @@
 }
 
 html {
-    font-weight: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
@@ -47,6 +47,9 @@ button {
 }
 
 .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-width: 170px;
     height: 62px;
     font-weight: 700;
@@ -61,7 +64,26 @@ button {
     opacity: 0.8;
 }
 
+.desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.678;
+    letter-spacing: 0%;
+    color: #51586a;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.18;
+}
+
 /* ============== Header ============== */
+
+.header {
+    padding-top: 30px;
+    background-color: #fbfaff;
+}
 
 .header__container {
     max-width: 1330px;
@@ -70,6 +92,7 @@ button {
 .header__row {
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header__contact {
@@ -98,6 +121,12 @@ button {
     color: var(--heading-color);
 }
 
+.header__avatar--wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .navbar__list {
     display: flex;
     column-gap: 43px;
@@ -111,6 +140,89 @@ button {
     color: #51586a;
 }
 
-/* ============== Common ============== */
+/* ============== Hero ============== */
 
-/* ============== Common ============== */
+.hero {
+    padding-top: 50px;
+    background-color: #fbfaff;
+}
+
+.hero__img--wrap {
+    max-width: 514px;
+}
+
+.hero__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero__content {
+    margin-top: 137px;
+}
+
+.hero__heading {
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 0.95;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    max-width: 370px;
+}
+
+.hero__cta {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.hero__work {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.678;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: 0%;
+    text-decoration-thickness: 0%;
+    color: var(--heading-color);
+}
+
+.hero__social {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.hero__social--text {
+    font-size: 1.6rem;
+    line-height: 1.875;
+}
+
+.hero__social--wrap {
+    display: flex;
+    column-gap: 20px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #080415;
+    color: #080415;
+    transition: 0.5s;
+}
+
+.social__link:hover {
+    background-color: #080415;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* ============== Clients ============== */
