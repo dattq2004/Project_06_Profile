@@ -556,7 +556,7 @@
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: 1140px;
     }
 
     .offset-xl-0 {
@@ -683,7 +683,7 @@
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .container {
-        max-width: 1330px;
+        max-width: 1170px;
     }
 
     .offset-xxl-0 {
