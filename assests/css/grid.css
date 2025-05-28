@@ -3,9 +3,12 @@
 
 /* Small devices (landscape phones, 576px and up) */
 .container,
-.container-fluid {
+.container-fluid,
+.container-2 {
     --column-size: 12;
-    --space: 10px;
+    --spacer: 15px;
+    --spacer-x: 30px;
+    --spacer-y: 30px;
 
     width: 100%;
     margin-left: auto;
@@ -17,8 +20,9 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--spacer) / 2);
-    margin-right: calc(-1 * var(--spacer) / 2);
+    margin-left: calc(-1 * var(--spacer-x) / 2);
+    margin-right: calc(-1 * var(--spacer-x) / 2);
+    margin-top: calc(-1 * var(--spacer-y));
 }
 
 .col {
@@ -84,8 +88,9 @@
 .col,
 .row[class*="row-cols-"] > *,
 .row > [class*="col-"] {
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
+    padding-left: calc(var(--spacer-x) / 2);
+    padding-right: calc(var(--spacer-x) / 2);
+    margin-top: calc(var(--spacer-y));
 }
 
 .row[class*="row-cols-"] > *,
@@ -684,6 +689,10 @@
 @media (min-width: 1400px) {
     .container {
         max-width: 1170px;
+    }
+
+    .container-2 {
+        max-width: 1330px;
     }
 
     .offset-xxl-0 {
